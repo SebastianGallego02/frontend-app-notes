@@ -35,13 +35,21 @@
 .task-icon{
     width: 25px;
     height: 25px;
-    margin: 5px;
+    margin: 5px 5px 5px 0px;
     color: white;
 }
 
+.archive{
+    margin-right: 10px;
+    transform: scale(0.9);
+}
 .task-container.completed{
     background-color: #01a71d;
     text-decoration: line-through;
 
+}
+.icons-container{
+    display: flex;
+    justify-content: flex-end;
 }
 

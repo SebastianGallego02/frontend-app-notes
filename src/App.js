@@ -1,21 +1,23 @@
 import './App.css';
-import minecraftLogo from './images/Minecraft_text.png';
-import TaskList from './components/TaskList.jsx';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import HomePage from './components/HomePage.jsx';
+import ArchivedPage from './components/ArchivedPage.jsx';
+import { Routes } from 'react-router-dom';
+import Layout from './components/Layout.jsx';
+
 
 function App() {
   return (
-    <div className="aplicacion">
-      <div className='logo-contenedor'>
-        <img 
-        className='logo'
-        src={minecraftLogo} 
-        alt="Logo" />
-      </div>
-      <div className='tareas-lista-principal'>
-        <h1>My Notes</h1>
-        <TaskList />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout/>}>
+          <Route path='archived' element={<ArchivedPage/>}></Route>
+          <Route path='/' element={<HomePage/>}></Route>
+          <Route path='*' element={<HomePage/>}></Route>
+        </Route>
+      </Routes>
+  </BrowserRouter>
   );
 }
 

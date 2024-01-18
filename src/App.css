@@ -8,13 +8,12 @@ body, html {
   color: #fff;
   background-color: #1b1b32;
   font-family: Lato, sans-serif;
-  margin-top: 40px; 
 }
 
 h1 {
   color: #1b1b32;
   font-size: 25px;
-  font-family: Roboto, sans-serif;
+  font-family: Poppins, sans-serif;
   text-align: center;
   margin: 20px 0;
 }
