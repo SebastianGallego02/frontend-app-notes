@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import minecraftLogo from './images/Minecraft_text.png';
+import TaskList from './components/TaskList.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="aplicacion">
+      <div className='logo-contenedor'>
+        <img 
+        className='logo'
+        src={minecraftLogo} 
+        alt="Logo" />
+      </div>
+      <div className='tareas-lista-principal'>
+        <h1>My Notes</h1>
+        <TaskList />
+      </div>
     </div>
   );
 }
